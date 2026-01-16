@@ -45,4 +45,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/public/
-          server-dir: /souzou-lesson.jp/public_html/
+          server-dir: ./
