@@ -31,7 +31,7 @@ jobs:
 
       - name: Create .htaccess
         run: |
-          printf '%s\n' 'RewriteEngine On' 'RewriteBase /' 'RewriteCond %{REQUEST_FILENAME} !-f' 'RewriteCond %{REQUEST_FILENAME} !-d' 'RewriteRule ^ index.html [L]' > dist/public/.htaccess
+          printf '%s\n' 'RewriteEngine On' 'RewriteBase /lesson/' 'RewriteCond %{REQUEST_FILENAME} !-f' 'RewriteCond %{REQUEST_FILENAME} !-d' 'RewriteRule ^ index.html [L]' > dist/public/.htaccess
 
       - name: Deploy to Xserver via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
