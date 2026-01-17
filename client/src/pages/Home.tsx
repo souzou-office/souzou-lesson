@@ -499,7 +499,7 @@ export default function HomePage() {
                   3万円〜100万円
                 </p>
                 <p className="text-sm text-gray-600">
-                  ライト・ミドル・高額の3プランからお選びいただけます
+                  ライト・ミドル・カスタムの3プランからお選びいただけます
                 </p>
               </CardContent>
             </Card>
