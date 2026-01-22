@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, CheckCircle2, Gift, DollarSign, TrendingUp, Zap, Video, Users, Clock, Home, BarChart3, Lightbulb, Building2, PieChart, Award, Menu, X } from "lucide-react";
+import { ArrowRight, CheckCircle2, Gift, DollarSign, TrendingUp, Zap, Video, Users, Clock, Home, BarChart3, Lightbulb, Building2, PieChart, Award, Menu, X, FileText, Mail, UserPlus, PlayCircle } from "lucide-react";
 import { useState } from "react";
 
 export default function HomePage() {
@@ -418,8 +418,156 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Flow Section */}
+      {/* How to Use Section - Timeline */}
       <section className="section-padding bg-white">
+        <div className="container max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <span className="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              FLOW
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+              ご利用の流れ
+            </h2>
+            <div className="w-12 h-1 bg-blue-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">
+              オンラインで完結。受講開始までスムーズに進められます。
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Center Line */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-200 h-full"></div>
+
+            {/* Step 1 - Right */}
+            <div className="relative flex flex-col md:flex-row items-center mb-8">
+              <div className="hidden md:block w-1/2"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:flex">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex flex-col items-center justify-center shadow-lg">
+                  <span className="text-xs">STEP</span>
+                  <span className="text-xl font-bold">1</span>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 md:pl-12">
+                <div className="bg-white rounded-lg p-6 shadow-md border border-gray-100">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="md:hidden w-12 h-12 bg-blue-600 text-white rounded-full flex flex-col items-center justify-center text-xs">
+                      <span>STEP</span>
+                      <span className="font-bold">1</span>
+                    </div>
+                    <FileText className="h-6 w-6 text-blue-600 hidden md:block" />
+                    <h3 className="text-lg font-bold">申込フォームの入力</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    LINEリッチメニューの「特定創業支援講座の申込」から専用のGoogleフォームにアクセスし、氏名やメールアドレスなどの必要事項を入力して送信します。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2 - Left */}
+            <div className="relative flex flex-col md:flex-row items-center mb-8">
+              <div className="w-full md:w-1/2 md:pr-12 order-2 md:order-1">
+                <div className="bg-white rounded-lg p-6 shadow-md border border-gray-100">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="md:hidden w-12 h-12 bg-green-600 text-white rounded-full flex flex-col items-center justify-center text-xs">
+                      <span>STEP</span>
+                      <span className="font-bold">2</span>
+                    </div>
+                    <Mail className="h-6 w-6 text-green-600 hidden md:block" />
+                    <h3 className="text-lg font-bold">案内メールの確認</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    登録したメールアドレス宛に、<span className="font-bold">「【特定創業支援講座】お申込みありがとうございます」</span>という件名のメールが届きます。
+                  </p>
+                  <p className="text-xs text-gray-400 mt-2">
+                    ※メールが届かない場合は、迷惑メールフォルダもご確認ください。
+                  </p>
+                </div>
+              </div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:flex order-1 md:order-2">
+                <div className="w-16 h-16 bg-green-600 text-white rounded-full flex flex-col items-center justify-center shadow-lg">
+                  <span className="text-xs">STEP</span>
+                  <span className="text-xl font-bold">2</span>
+                </div>
+              </div>
+              <div className="hidden md:block w-1/2 order-3"></div>
+            </div>
+
+            {/* Step 3 - Right */}
+            <div className="relative flex flex-col md:flex-row items-center mb-8">
+              <div className="hidden md:block w-1/2"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:flex">
+                <div className="w-16 h-16 bg-yellow-500 text-white rounded-full flex flex-col items-center justify-center shadow-lg">
+                  <span className="text-xs">STEP</span>
+                  <span className="text-xl font-bold">3</span>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 md:pl-12">
+                <div className="bg-white rounded-lg p-6 shadow-md border border-gray-100">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="md:hidden w-12 h-12 bg-yellow-500 text-white rounded-full flex flex-col items-center justify-center text-xs">
+                      <span>STEP</span>
+                      <span className="font-bold">3</span>
+                    </div>
+                    <UserPlus className="h-6 w-6 text-yellow-500 hidden md:block" />
+                    <h3 className="text-lg font-bold">受講用アカウントの作成</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    メール内のリンクから受講登録ページへ移動します。
+                  </p>
+                  <p className="text-gray-600 text-sm mt-2">
+                    システムの仕様上、ボタンに<span className="font-bold">「今すぐ購入する」と表示されますが、受講は無料です</span>。費用は一切発生しませんので、そのままアカウント作成を進めてください。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 4 - Final Card */}
+            <div className="relative flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2 md:pr-12 order-2 md:order-1">
+                <div className="bg-white rounded-lg p-6 shadow-md border border-gray-100">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="md:hidden w-12 h-12 bg-blue-600 text-white rounded-full flex flex-col items-center justify-center text-xs">
+                      <span>STEP</span>
+                      <span className="font-bold">4</span>
+                    </div>
+                    <PlayCircle className="h-6 w-6 text-blue-600 hidden md:block" />
+                    <h3 className="text-lg font-bold">受講スタート！</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    登録完了後、すぐに講義動画の視聴が可能です。経営・財務・販路・人材育成の4分野を、ご自身のペースで学習しましょう。
+                  </p>
+                </div>
+              </div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:flex order-1 md:order-2">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex flex-col items-center justify-center shadow-lg">
+                  <span className="text-xs">STEP</span>
+                  <span className="text-xl font-bold">4</span>
+                </div>
+              </div>
+              <div className="hidden md:block w-1/2 order-3"></div>
+            </div>
+
+            {/* Final Celebration Card */}
+            <div className="mt-12 flex justify-center">
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 shadow-lg border-2 border-red-100 max-w-md text-center">
+                <div className="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-bold text-red-600 mb-2">学習完了！</h3>
+                <p className="text-gray-600 text-sm">
+                  全講座を修了すると、PDF形式の修了証が発行されます。特定創業支援を受けた証明としてご活用ください。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Flow Section */}
+      <section className="section-padding bg-gray-50">
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             受講の流れ
@@ -468,86 +616,6 @@ export default function HomePage() {
               <p className="text-sm text-gray-700 text-center">
                 受講完了後、PDF形式の修了証を発行
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How to Use Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="container max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            ご利用の流れ
-          </h2>
-          <p className="text-center text-gray-600 mb-12">
-            オンラインで完結。受講開始までスムーズに進められます。
-          </p>
-
-          <div className="space-y-8">
-            {/* Step 1 */}
-            <div className="bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-                  1
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-2">申込フォームの入力</h3>
-                  <p className="text-gray-700">
-                    LINEリッチメニューの「特定創業支援講座の申込」から専用のGoogleフォームにアクセスし、氏名やメールアドレスなどの必要事項を入力して送信します。
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="bg-white rounded-lg p-6 shadow-md border-l-4 border-green-500">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-2">案内メールの確認</h3>
-                  <p className="text-gray-700">
-                    登録したメールアドレス宛に、<span className="font-bold">「【特定創業支援講座】お申込みありがとうございます」</span>という件名のメールが届きます。
-                  </p>
-                  <p className="text-sm text-gray-500 mt-2">
-                    ※メールが届かない場合は、迷惑メールフォルダもご確認ください。
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="bg-white rounded-lg p-6 shadow-md border-l-4 border-yellow-500">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-yellow-600 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-2">受講用アカウントの作成</h3>
-                  <p className="text-gray-700">
-                    メール内のリンクから受講登録ページへ移動します。
-                  </p>
-                  <p className="text-gray-700 mt-2">
-                    システムの仕様上、ボタンに<span className="font-bold">「今すぐ購入する」と表示されますが、受講は無料です</span>。費用は一切発生しませんので、そのままアカウント作成（メールアドレス・パスワードの設定）を進めてください。
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-                  4
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-2">受講スタート！</h3>
-                  <p className="text-gray-700">
-                    登録完了後、すぐに講義動画の視聴が可能です。経営・財務・販路・人材育成の4分野を、ご自身のペースで学習しましょう。
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
