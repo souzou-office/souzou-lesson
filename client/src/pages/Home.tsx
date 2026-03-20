@@ -220,9 +220,9 @@ export default function HomePage() {
             {/* Feature 2 */}
             <div className="text-center p-6 bg-white rounded-lg hover:shadow-lg transition">
               <div className="flex justify-center mb-4"><Clock className="h-12 w-12 text-green-600" /></div>
-              <h3 className="text-xl font-bold mb-3">最短1日で修了可能</h3>
+              <h3 className="text-xl font-bold mb-3">約1か月で修了</h3>
               <p className="text-gray-600">
-                全4回の講座（合計約6時間）を自分のペースで進められます。週末にまとめて受講することも可能です。
+                全4回の講座（合計約6時間）を、ご自身のペースで受講いただけます。なお、本講座は制度要件に基づき、各章が順次公開されるため、修了まで約1か月かかります。
               </p>
             </div>
 
@@ -603,7 +603,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-lg font-bold mb-3 text-center">動画視聴</h3>
               <p className="text-sm text-gray-700 text-center">
-                お好きな時間に6時間の講座を受講
+                各章が順次公開され、約1か月で全講座を受講
               </p>
             </div>
 
