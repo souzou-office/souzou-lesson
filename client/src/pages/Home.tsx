@@ -603,7 +603,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-lg font-bold mb-3 text-center">動画視聴</h3>
               <p className="text-sm text-gray-700 text-center">
-                お好きな時間に6時間の講座を受講
+                各章が順次公開され、約1か月で全講座を受講
               </p>
             </div>
 
