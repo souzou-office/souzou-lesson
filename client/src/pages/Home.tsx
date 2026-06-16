@@ -70,12 +70,14 @@ export default function HomePage() {
 
       {/* Hero Section with Full Design */}
       <section className="bg-yellow-50 text-gray-900 py-12 md:py-20 relative overflow-hidden">
-        {/* Free Seal Badge - top-left */}
-        <div className="absolute top-4 left-4 md:top-6 md:left-6 z-20 -rotate-6">
-          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-red-500 to-pink-500 shadow-xl flex items-center justify-center">
-            <div className="w-[86%] h-[86%] rounded-full border-2 border-white/70 flex flex-col items-center justify-center text-white text-center leading-none">
-              <span className="text-[11px] md:text-sm font-bold tracking-wide">受講料</span>
-              <span className="text-2xl md:text-4xl font-extrabold mt-1">無料</span>
+        {/* Free Seal Badge - aligned under the logo */}
+        <div className="absolute top-0 inset-x-0 z-20 pointer-events-none">
+          <div className="container">
+            <div className="w-24 h-24 md:w-32 md:h-32 mt-3 md:mt-4 -rotate-6 rounded-full bg-gradient-to-br from-red-500 to-pink-500 shadow-xl flex items-center justify-center">
+              <div className="w-[86%] h-[86%] rounded-full border-2 border-white/70 flex flex-col items-center justify-center text-white text-center leading-none">
+                <span className="text-[11px] md:text-sm font-bold tracking-wide">受講料</span>
+                <span className="text-2xl md:text-4xl font-extrabold mt-1">無料</span>
+              </div>
             </div>
           </div>
         </div>
