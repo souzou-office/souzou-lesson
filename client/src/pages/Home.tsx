@@ -15,12 +15,8 @@ export default function HomePage() {
       {/* Header/Navigation */}
       <header className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="container flex items-center justify-between h-20">
-          <div className="flex items-center gap-2 md:gap-3">
+          <div className="flex items-center gap-2">
             <img src={`${import.meta.env.BASE_URL}logo.png`} alt="司法書士法人そうぞう" className="h-12 w-auto" />
-            <span className="inline-flex items-center gap-1 bg-red-500 text-white text-xs md:text-sm font-bold px-2.5 py-1 rounded-full whitespace-nowrap">
-              <Gift className="h-3.5 w-3.5" />
-              受講料無料
-            </span>
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#about" className="text-sm font-medium hover:text-blue-600 transition">
@@ -74,18 +70,17 @@ export default function HomePage() {
 
       {/* Hero Section with Full Design */}
       <section className="bg-yellow-50 text-gray-900 py-12 md:py-20 relative overflow-hidden">
-        <div className="container max-w-5xl mx-auto relative z-10">
-          {/* Free Badge - Prominent */}
-          <div className="flex flex-col items-center mb-8 md:mb-10">
-            <div className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 md:px-10 py-3 md:py-4 rounded-full shadow-xl">
-              <Gift className="h-6 w-6 md:h-8 md:w-8" />
-              <span className="text-xl md:text-3xl font-extrabold tracking-wide">受講料 完全無料</span>
+        {/* Free Seal Badge - top-left */}
+        <div className="absolute top-4 left-4 md:top-6 md:left-6 z-20 -rotate-6">
+          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-red-500 to-pink-500 shadow-xl flex items-center justify-center">
+            <div className="w-[86%] h-[86%] rounded-full border-2 border-white/70 flex flex-col items-center justify-center text-white text-center leading-none">
+              <span className="text-[11px] md:text-sm font-bold tracking-wide">受講料</span>
+              <span className="text-2xl md:text-4xl font-extrabold mt-1">無料</span>
             </div>
-            <p className="text-sm md:text-base text-gray-700 font-semibold mt-3 text-center">
-              福岡市認定の創業支援講座を <span className="text-red-600 font-bold">0円</span> で受講できます
-            </p>
           </div>
+        </div>
 
+        <div className="container max-w-5xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
             {/* Illustration - Full Width */}
             <div className="w-full md:w-auto flex justify-center">
