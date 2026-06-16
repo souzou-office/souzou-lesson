@@ -70,6 +70,16 @@ export default function HomePage() {
 
       {/* Hero Section with Full Design */}
       <section className="bg-yellow-50 text-gray-900 py-12 md:py-20 relative overflow-hidden">
+        {/* Free Seal Badge - top-left */}
+        <div className="absolute top-4 left-4 md:top-6 md:left-6 z-20 -rotate-6">
+          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-red-500 to-pink-500 shadow-xl flex items-center justify-center">
+            <div className="w-[86%] h-[86%] rounded-full border-2 border-white/70 flex flex-col items-center justify-center text-white text-center leading-none">
+              <span className="text-[11px] md:text-sm font-bold tracking-wide">受講料</span>
+              <span className="text-2xl md:text-4xl font-extrabold mt-1">無料</span>
+            </div>
+          </div>
+        </div>
+
         <div className="container max-w-5xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
             {/* Illustration - Full Width */}
